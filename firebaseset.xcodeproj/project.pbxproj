@@ -13,6 +13,7 @@
 		B4724D4825EDC26F00AEF7AB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B4724D4725EDC26F00AEF7AB /* GoogleService-Info.plist */; };
 		B4724D5325EDC31C00AEF7AB /* d_GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B4724D5225EDC31C00AEF7AB /* d_GoogleService-Info.plist */; };
 		B472517C25F25BEE00AEF7AB /* FirebaseUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B472517B25F25BEE00AEF7AB /* FirebaseUtil.swift */; };
+		B47253B625F7A18A00AEF7AB /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B47253B525F7A18A00AEF7AB /* Settings.bundle */; };
 		B4EEADE925ECBEC900B5A8AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EEADE825ECBEC900B5A8AA /* AppDelegate.swift */; };
 		B4EEADED25ECBEC900B5A8AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EEADEC25ECBEC900B5A8AA /* ViewController.swift */; };
 		B4EEADF025ECBEC900B5A8AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4EEADEE25ECBEC900B5A8AA /* Main.storyboard */; };
@@ -51,6 +52,7 @@
 		B4724D4725EDC26F00AEF7AB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B4724D5225EDC31C00AEF7AB /* d_GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "d_GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B472517B25F25BEE00AEF7AB /* FirebaseUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUtil.swift; sourceTree = "<group>"; };
+		B47253B525F7A18A00AEF7AB /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = firebaseset/Settings.bundle; sourceTree = "<group>"; };
 		B4EEADE525ECBEC900B5A8AA /* firebaseset.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firebaseset.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4EEADE825ECBEC900B5A8AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4EEADEC25ECBEC900B5A8AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 		B4EEADDC25ECBEC900B5A8AA = {
 			isa = PBXGroup;
 			children = (
+				B47253B525F7A18A00AEF7AB /* Settings.bundle */,
 				B4EEADE725ECBEC900B5A8AA /* firebaseset */,
 				B4EEADFE25ECBECB00B5A8AA /* firebasesetTests */,
 				B4EEAE0925ECBECB00B5A8AA /* firebasesetUITests */,
@@ -207,7 +210,7 @@
 				9C839E582819318CF699AB13 /* [CP] Embed Pods Frameworks */,
 				B4724D3825EDBC5300AEF7AB /* ShellScript */,
 				3C271FA988E310C58445AC6E /* [CP] Copy Pods Resources */,
-				B472536E25F78BC500AEF7AB /* ShellScript */,
+				B472536E25F78BC500AEF7AB /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -311,6 +314,7 @@
 				B4EEADF225ECBECA00B5A8AA /* Assets.xcassets in Resources */,
 				B4724D4825EDC26F00AEF7AB /* GoogleService-Info.plist in Resources */,
 				B4EEADF025ECBEC900B5A8AA /* Main.storyboard in Resources */,
+				B47253B625F7A18A00AEF7AB /* Settings.bundle in Resources */,
 				B4724D5325EDC31C00AEF7AB /* d_GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,7 +471,7 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
 		};
-		B472536E25F78BC500AEF7AB /* ShellScript */ = {
+		B472536E25F78BC500AEF7AB /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -476,13 +480,14 @@
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [ $CONFIGURATION = \"Debug\" ]; then cd $SRCROOT /usr/local/bin/license-plist --output-path $PRODUCT_NAME/Settings.bundle\nfi\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [ $CONFIGURATION = \"Debug\" ]; then ${PODS_ROOT}/LicensePlist/license-plist --output-path $PRODUCT_NAME/Settings.bundle --github-token ta--ken \nfi\n \n";
 		};
 		D40BD6CEE5C929264671274D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
