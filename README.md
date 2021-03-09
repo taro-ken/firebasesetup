@@ -1,2 +1,2 @@
-# firebasesetup
-firebaseの環境分岐設定
+# firebaselogin
+firebaseを利用したログイン画面、開発環境の分岐
