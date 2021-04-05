@@ -8,6 +8,7 @@ target 'firebaseset' do
   pod 'Firebase/Analytics', '7.6.0'
   pod 'Firebase/Auth', '7.6.0'
   pod 'Firebase/Firestore', '7.6.0'
+  pod 'FirebaseFirestoreSwift', '7.6.0-beta'
   
   pod 'Firebase/Crashlytics', '7.6.0'
   pod 'Firebase/Storage', '7.6.0'

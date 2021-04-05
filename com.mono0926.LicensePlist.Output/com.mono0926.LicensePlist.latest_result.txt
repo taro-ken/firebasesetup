@@ -120,6 +120,16 @@ body:
                    …
 version: 7.6.0
 
+name: FirebaseFirestoreSwift, nameSpecified: 
+body: 
+                   …
+version: 
+
+name: FirebaseFirestoreSwift, nameSpecified: 
+body: 
+                   …
+version: 
+
 name: FirebaseInstallations, nameSpecified: 
 body: 
                    …

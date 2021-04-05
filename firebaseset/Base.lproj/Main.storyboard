@@ -17,113 +17,96 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGt-Db-xpE">
-                                <rect key="frame" x="135" y="596" width="145" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lH-Rw-eyx">
-                                <rect key="frame" x="135" y="402" width="145" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="クラッシュ"/>
-                                <connections>
-                                    <action selector="tapCrash:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q4e-kz-SBX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZU-JF-dYq">
-                                <rect key="frame" x="169" y="234" width="77" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="ログ確認用"/>
-                                <connections>
-                                    <segue destination="ADX-i1-28K" kind="show" id="h9t-fn-tav"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4W-cW-Mu0">
-                                <rect key="frame" x="157" y="144" width="77" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="チェック用"/>
-                                <connections>
-                                    <segue destination="myk-QH-KWI" kind="show" id="vyM-hs-VhH"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="132" translatesAutoresizingMaskIntoConstraints="NO" id="8ef-ag-N08">
+                                <rect key="frame" x="140" y="128" width="135" height="678"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZU-JF-dYq">
+                                        <rect key="frame" x="26.5" y="0.0" width="82" height="70.5"/>
+                                        <state key="normal" title="EventChack"/>
+                                        <connections>
+                                            <segue destination="QSs-vL-Kre" kind="show" id="mm5-BY-a9t"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MIo-UB-A7t">
+                                        <rect key="frame" x="38.5" y="202.5" width="58" height="70.5"/>
+                                        <state key="normal" title="firestore"/>
+                                        <connections>
+                                            <segue destination="4uu-qW-KFL" kind="show" id="als-tc-HdQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lH-Rw-eyx">
+                                        <rect key="frame" x="35.5" y="405" width="64" height="70.5"/>
+                                        <state key="normal" title="ClashLog"/>
+                                        <connections>
+                                            <action selector="tapCrash:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q4e-kz-SBX"/>
+                                            <segue destination="fdh-Me-GHt" kind="show" id="fKt-vi-kx0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGt-Db-xpE">
+                                        <rect key="frame" x="31" y="607.5" width="73" height="70.5"/>
+                                        <state key="normal" title="FirebaseUI"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8ef-ag-N08" secondAttribute="trailing" constant="139" id="KbV-OJ-Ad5"/>
+                            <constraint firstItem="8ef-ag-N08" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="140" id="Op7-FT-cKJ"/>
+                            <constraint firstItem="8ef-ag-N08" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="Pmc-cF-eEZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8ef-ag-N08" secondAttribute="bottom" constant="56" id="cqT-Qn-agV"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="FZo-2E-6Ww"/>
                     <connections>
                         <outlet property="authButton" destination="TGt-Db-xpE" id="t0G-hr-iRZ"/>
-                        <segue destination="75x-fM-ALQ" kind="show" identifier="toNextView" id="n8u-iu-YX4"/>
-                        <segue destination="NJC-Pq-D7J" kind="show" identifier="toNextView" id="Atr-yh-z4V"/>
+                        <segue destination="b7I-Hw-2o1" kind="show" id="Stn-NC-OUW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1005.7971014492755" y="93.75"/>
         </scene>
-        <!--Check View Controller-->
-        <scene sceneID="DTT-Um-NJY">
+        <!--Login-->
+        <scene sceneID="KKO-BK-gww">
             <objects>
-                <viewController id="myk-QH-KWI" customClass="checkViewController" customModule="firebaseset" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Rn6-AM-CYm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="dhG-Wz-s7S"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="wrQ-XN-ts4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9Sn-Z5-GqJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Login" id="b7I-Hw-2o1" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="02c-Bg-zH7"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KII-Vr-7TB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1752" y="-1042"/>
+            <point key="canvasLocation" x="1940" y="385"/>
         </scene>
-        <!--Analytics View Controller-->
-        <scene sceneID="B6n-a3-JlA">
+        <!--Analytics-->
+        <scene sceneID="q7R-gv-p0n">
             <objects>
-                <viewController id="ADX-i1-28K" customClass="AnalyticsViewController" customModule="firebaseset" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ZHd-s6-Hxo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="kir-Aa-ZWl"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="MKd-ZT-Fe2"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ELA-Zt-Fpo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Analytics" id="QSs-vL-Kre" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="tr9-4f-UHJ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wwa-Fu-HjY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2064" y="-410"/>
+            <point key="canvasLocation" x="1886" y="-223"/>
         </scene>
-        <!--Second View Controller-->
-        <scene sceneID="t0h-OE-nWK">
+        <!--Firestore-->
+        <scene sceneID="Sdm-ak-02I">
             <objects>
-                <viewController id="NJC-Pq-D7J" customClass="SecondViewController" customModule="firebaseset" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="uwe-nt-SYD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="gPL-K7-4WH"/>
-                        <color key="backgroundColor" systemColor="systemBlueColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Slj-3s-CjM"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="u5n-UQ-fQl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Firestore" id="4uu-qW-KFL" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="fSv-hb-JXK"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="etd-ZJ-5Un" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1774" y="892"/>
+            <point key="canvasLocation" x="1896" y="21"/>
         </scene>
-        <!--Crashlitics View Controller-->
-        <scene sceneID="LqQ-y2-O66">
+        <!--Clash-->
+        <scene sceneID="ewB-DM-WvS">
             <objects>
-                <viewController id="75x-fM-ALQ" customClass="CrashliticsViewController" customModule="firebaseset" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="jdt-SM-5rL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="ZnK-CF-0em"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="1bF-Tx-4QV"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5Iy-iQ-yXH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Clash" id="fdh-Me-GHt" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Tb6-WS-kww"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6hI-fc-JAM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2154" y="226"/>
+            <point key="canvasLocation" x="1842" y="175"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9FB-4U-tYj">
@@ -147,9 +130,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

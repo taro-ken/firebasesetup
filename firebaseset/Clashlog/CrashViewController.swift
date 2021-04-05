@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CrashliticsViewController: UIViewController {
+class CrashViewController: UIViewController {
 
     
       @IBAction func tapCrash(_ sender: Any) {
