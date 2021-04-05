@@ -273,7 +273,7 @@ PODS:
     - FirebaseCoreDiagnostics (~> 7.4)
     - GoogleUtilities/Environment (~> 7.0)
     - GoogleUtilities/Logger (~> 7.0)
-  - FirebaseCoreDiagnostics (7.7.0):
+  - FirebaseCoreDiagnostics (7.8.0):
     - GoogleDataTransport (~> 8.0)
     - GoogleUtilities/Environment (~> 7.0)
     - GoogleUtilities/Logger (~> 7.0)
@@ -299,7 +299,7 @@ PODS:
     - "gRPC-C++ (~> 1.28.0)"
     - leveldb-library (~> 1.22)
     - nanopb (~> 2.30907.0)
-  - FirebaseInstallations (7.7.0):
+  - FirebaseInstallations (7.8.0):
     - FirebaseCore (~> 7.0)
     - GoogleUtilities/Environment (~> 7.0)
     - GoogleUtilities/UserDefaults (~> 7.0)
@@ -405,7 +405,7 @@ PODS:
   - GTMSessionFetcher/Core (1.5.0)
   - GTMSessionFetcher/Full (1.5.0):
     - GTMSessionFetcher/Core (= 1.5.0)
-  - leveldb-library (1.22)
+  - leveldb-library (1.22.1)
   - LicensePlist (3.0.5)
   - nanopb (2.30907.0):
     - nanopb/decode (= 2.30907.0)
@@ -468,11 +468,11 @@ SPEC CHECKSUMS:
   FirebaseAnalytics: 9f8f4feab1f3fddf4e4515f8f022fe6aa9e51043
   FirebaseAuth: 0a1df88dc32569db509e6269c3e4bf2a168e8ae8
   FirebaseCore: 0a43b7f1c5b36f3358cd703011ca4c7e0df55870
-  FirebaseCoreDiagnostics: 179bf3831213451c8addd036aca7fcf5492ec154
+  FirebaseCoreDiagnostics: 066f996579cf097bdad3d7dc9a918d6b9e129c50
   FirebaseCrashlytics: 1e87b25303b1840b3c99c37ee427c3e9564a4be1
   FirebaseDatabase: 21842227253dafe61482065148fd044ba7983a41
   FirebaseFirestore: b860346d5095c741528efac94995bab39275d0bf
-  FirebaseInstallations: 42c86e7b02ff75b7f27f85833bf5dcb5f38a9774
+  FirebaseInstallations: 7f7ed0e7e27fb51f57291e1876e2ddb1524126c1
   FirebaseStorage: 47890c9607e58b3046f072538c8c1ca4db2b0940
   FirebaseUI: 59db3d833773f985550897d54ceb811ba37fb9a5
   GoogleAppMeasurement: c542a2feaac9ab98fd074e8f1a02c3585bbfbd47
@@ -483,7 +483,7 @@ SPEC CHECKSUMS:
   gRPC-Core: 4afa11bfbedf7cdecd04de535a9e046893404ed5
   GTMAppAuth: 197a8dabfea5d665224aa00d17f164fc2248dab9
   GTMSessionFetcher: b3503b20a988c4e20cc189aa798fd18220133f52
-  leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
+  leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
   LicensePlist: 11c638fa9dc22ddb5771cdf910242ae1ba2684da
   nanopb: 59221d7f958fb711001e6a449489542d92ae113e
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
