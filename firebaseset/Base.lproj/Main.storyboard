@@ -21,21 +21,21 @@
                                 <rect key="frame" x="140" y="128" width="135" height="678"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZU-JF-dYq">
-                                        <rect key="frame" x="26.5" y="0.0" width="82" height="70.5"/>
+                                        <rect key="frame" x="26.5" y="0.0" width="82" height="30"/>
                                         <state key="normal" title="EventChack"/>
                                         <connections>
                                             <segue destination="QSs-vL-Kre" kind="show" id="mm5-BY-a9t"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MIo-UB-A7t">
-                                        <rect key="frame" x="38.5" y="202.5" width="58" height="70.5"/>
+                                        <rect key="frame" x="38.5" y="162" width="58" height="30"/>
                                         <state key="normal" title="firestore"/>
                                         <connections>
                                             <segue destination="4uu-qW-KFL" kind="show" id="als-tc-HdQ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lH-Rw-eyx">
-                                        <rect key="frame" x="35.5" y="405" width="64" height="70.5"/>
+                                        <rect key="frame" x="35.5" y="324" width="64" height="30"/>
                                         <state key="normal" title="ClashLog"/>
                                         <connections>
                                             <action selector="tapCrash:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q4e-kz-SBX"/>
@@ -43,8 +43,12 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGt-Db-xpE">
-                                        <rect key="frame" x="31" y="607.5" width="73" height="70.5"/>
+                                        <rect key="frame" x="31" y="486" width="73" height="30"/>
                                         <state key="normal" title="FirebaseUI"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POg-jF-Hyf">
+                                        <rect key="frame" x="32.5" y="648" width="70" height="30"/>
+                                        <state key="normal" title="AuthLogin"/>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -76,7 +80,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KII-Vr-7TB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1940" y="385"/>
+            <point key="canvasLocation" x="2062" y="265"/>
         </scene>
         <!--Analytics-->
         <scene sceneID="q7R-gv-p0n">
